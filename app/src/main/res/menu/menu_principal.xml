@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home_icon"
+            android:title="@string/strInicio" />
+
+        <item android:title="@string/strGram">
+            <menu>
+                <item
+                    android:id="@+id/nav_numeros"
+                    android:icon="@drawable/number_icon"
+                    android:title="@string/strNumeros" />
+
+                <item
+                    android:id="@+id/nav_abcdario"
+                    android:icon="@drawable/abcdario_icon"
+                    android:title="@string/strAbecedario" />
+
+                <item
+                    android:id="@+id/nav_saludos"
+                    android:icon="@drawable/saludos_icon"
+                    android:title="@string/strSaludos" />
+
+                <item
+                    android:id="@+id/nav_pronombres"
+                    android:icon="@drawable/prono_icon"
+                    android:title="@string/strPronombres" />
+
+            </menu>
+        </item>
+
+
+    </group>
+
+    <group>
+
+        <item android:title="@string/strPerfil">
+            <menu>
+                <item
+                    android:id="@+id/nav_perfil"
+                    android:icon="@drawable/user_icon"
+                    android:title="@string/strPerfilItem" />
+
+                <item
+                    android:id="@+id/nav_logout"
+                    android:icon="@drawable/logout_icon"
+                    android:title="@string/strLogout" />
+
+
+
+            </menu>
+        </item>
+
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/about_icon"
+            android:title="@string/strAbout" />
+
+    </group>
+
+
+</menu>
