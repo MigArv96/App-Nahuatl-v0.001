@@ -37,4 +37,6 @@
     <string name="navclose">Cerrar menu</string>
     <string name="strInicioHeader">Inicio</string>
     <string name="strLogoAppHeader">LogoAprendeNahuat</string>
+    <string name="str_toolbartitle">Aprende Nahuatl</string>
+    <string name="strLogoNavbar">Logo de aplicación</string>
 </resources>

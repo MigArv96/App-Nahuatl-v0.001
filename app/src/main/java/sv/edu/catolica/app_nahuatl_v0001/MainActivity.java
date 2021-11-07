@@ -9,6 +9,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 
 
 import com.google.android.material.navigation.NavigationView;
@@ -56,9 +57,29 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         }
     }
 
+    public void ActNum (View v){
+
+    }
+
+    public void ActMain(View v){
+
+    }
+
+    public void ActAbecedario(MenuItem item) {
+
+    }
+
+    public void ActNumeros (MenuItem item) {
+
+    }
+
+
+
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         return true;
     }
+
+
 }
 
