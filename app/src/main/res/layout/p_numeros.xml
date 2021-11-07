@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/numeros_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8CD83"
+    android:fitsSystemWindows="true"
+    android:onClick="ActNum"
+    android:textAlignment="center"
+    tools:openDrawer="start">
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/header"
+        app:menu="@menu/menu_principal" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_numeros"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@color/black"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:navigationIcon="@drawable/menu"
+                app:title="@string/str_toolbartitle">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|end">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="65dp"
+                        android:layout_gravity="end"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/strLogoNavbar"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/textView2"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/logo65" />
+                </FrameLayout>
+
+
+            </androidx.appcompat.widget.Toolbar>
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar_numeros">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tvTituloTabla"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_span="4"
+                        android:gravity="center_horizontal"
+                        android:text="@string/TituloTablaNumeros"
+                        android:textAlignment="center"
+                        android:textAllCaps="true"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        tools:ignore="TextContrastCheck" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <ImageButton
+                        android:id="@+id/btnUno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#00EC9276"
+                        android:contentDescription="@string/CDbtnA"
+                        app:srcCompat="@drawable/uno" />
+
+                    <ImageButton
+                        android:id="@+id/btnDos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#00FFFFFF"
+                        android:contentDescription="@string/CDbtnCH"
+                        app:srcCompat="@drawable/dos"
+                        tools:ignore="ImageContrastCheck" />
+
+                    <ImageButton
+                        android:id="@+id/btnTres"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#00FFFFFF"
+                        android:contentDescription="@string/CDbtnE"
+                        app:srcCompat="@drawable/tres"
+                        tools:ignore="ImageContrastCheck" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <ImageButton
+                        android:id="@+id/btnCuatro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#00EC9276"
+                        android:contentDescription="@string/CDbtnA"
+                        app:srcCompat="@drawable/cuatro" />
+
+                    <ImageButton
+                        android:id="@+id/btnCinco"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#00FFFFFF"
+                        android:contentDescription="@string/CDbtnCH"
+                        app:srcCompat="@drawable/cinco"
+                        tools:ignore="ImageContrastCheck" />
+
+                    <ImageButton
+                        android:id="@+id/btnSeis"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#00FFFFFF"
+                        android:contentDescription="@string/CDbtnE"
+                        app:srcCompat="@drawable/seis"
+                        tools:ignore="ImageContrastCheck" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <ImageButton
+                        android:id="@+id/btnSiete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#00EC9276"
+                        android:contentDescription="@string/CDbtnA"
+                        app:srcCompat="@drawable/siete" />
+
+                    <ImageButton
+                        android:id="@+id/btnOcho"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#00FFFFFF"
+                        android:contentDescription="@string/CDbtnCH"
+                        app:srcCompat="@drawable/ocho"
+                        tools:ignore="ImageContrastCheck" />
+
+                    <ImageButton
+                        android:id="@+id/btnNueve"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#00FFFFFF"
+                        android:contentDescription="@string/CDbtnE"
+                        app:srcCompat="@drawable/nueve"
+                        tools:ignore="ImageContrastCheck" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <ImageButton
+                        android:id="@+id/btnDiez"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#00EC9276"
+                        android:contentDescription="@string/CDbtnA"
+                        app:srcCompat="@drawable/diez" />
+
+                    <ImageButton
+                        android:id="@+id/btnOnce"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#00FFFFFF"
+                        android:contentDescription="@string/CDbtnCH"
+                        app:srcCompat="@drawable/once"
+                        tools:ignore="ImageContrastCheck" />
+
+                    <ImageButton
+                        android:id="@+id/btnDoce"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#00FFFFFF"
+                        android:contentDescription="@string/CDbtnE"
+                        app:srcCompat="@drawable/doce"
+                        tools:ignore="ImageContrastCheck" />
+                </TableRow>
+            </TableLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.drawerlayout.widget.DrawerLayout>
