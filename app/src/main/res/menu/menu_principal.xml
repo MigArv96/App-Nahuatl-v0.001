@@ -13,12 +13,14 @@
                 <item
                     android:id="@+id/nav_numeros"
                     android:icon="@drawable/number_icon"
-                    android:title="@string/strNumeros" />
+                    android:title="@string/strNumeros"
+                    android:onClick="ActNumeros"/>
 
                 <item
                     android:id="@+id/nav_abcdario"
                     android:icon="@drawable/abcdario_icon"
-                    android:title="@string/strAbecedario" />
+                    android:title="@string/strAbecedario"
+                    android:onClick="ActAbecedario"/>
 
                 <item
                     android:id="@+id/nav_saludos"
