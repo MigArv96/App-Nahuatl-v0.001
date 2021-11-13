@@ -39,4 +39,6 @@
     <string name="strLogoAppHeader">LogoAprendeNahuat</string>
     <string name="str_toolbartitle">Aprende Nahuatl</string>
     <string name="strLogoNavbar">Logo de aplicación</string>
+    <string name="str_TabSaludosyColores">Saludos y Colores en Nahuat</string>
+    <string name="strPronom">Pronombres en Nahuat</string>
 </resources>
