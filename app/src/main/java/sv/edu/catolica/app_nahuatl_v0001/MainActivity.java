@@ -7,6 +7,7 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -57,26 +58,29 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         }
     }
 
-    public void ActNum (View v){
-
-    }
-
-    public void ActMain(View v){
-
-    }
-
-    public void ActAbecedario(MenuItem item) {
-
-    }
-
-    public void ActNumeros (MenuItem item) {
-
-    }
 
 
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.nav_home:
+                break;
+            case R.id.nav_numeros:
+                Intent intentN = new Intent(MainActivity.this, Numeros.class);
+                startActivity(intentN);
+                break;
+            case R.id.nav_saludos:
+                Intent intentS = new Intent(MainActivity.this, Saludos.class);
+                startActivity(intentS);
+                break;
+            case R.id.nav_pronombres:
+                Intent intentP = new Intent(MainActivity.this, Pronombres.class);
+                startActivity(intentP);
+                break;
+
+        }
+        drawerLayout.closeDrawer(GravityCompat.START);
         return true;
     }
 

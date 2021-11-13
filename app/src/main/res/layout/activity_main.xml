@@ -8,7 +8,6 @@
     android:layout_height="match_parent"
     android:background="#F8CD83"
     android:fitsSystemWindows="true"
-    android:onClick="ActMain"
     tools:context=".MainActivity"
     tools:openDrawer="start">
 
@@ -60,6 +59,7 @@
                 </FrameLayout>
 
             </androidx.appcompat.widget.Toolbar>
+
 
             <TableLayout
                 android:layout_width="wrap_content"
@@ -313,6 +313,7 @@
                         tools:ignore="ImageContrastCheck" />
                 </TableRow>
             </TableLayout>
+
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
