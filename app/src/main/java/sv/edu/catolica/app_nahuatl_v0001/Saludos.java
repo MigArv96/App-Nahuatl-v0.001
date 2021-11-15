@@ -15,7 +15,7 @@ import android.widget.ImageButton;
 
 import com.google.android.material.navigation.NavigationView;
 
-public class Saludos extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
+public class Saludos extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     //Declaracion de variables
 
@@ -52,40 +52,40 @@ public class Saludos extends AppCompatActivity implements NavigationView.OnNavig
         //---------Botones_Audio------------------//
 
         imageButton = findViewById(R.id.btnYektunal);
-        MediaPlayer mediaPlayer = MediaPlayer.create( this, R.raw.buenodias);
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.buenodias);
         imageButton.setOnClickListener(v -> mediaPlayer.start());
         imageButton = findViewById(R.id.btnTiutak);
-        MediaPlayer mediaPlayer1 = MediaPlayer.create( this, R.raw.buenastardes);
+        MediaPlayer mediaPlayer1 = MediaPlayer.create(this, R.raw.buenastardes);
         imageButton.setOnClickListener(v -> mediaPlayer1.start());
         imageButton = findViewById(R.id.btnTayua);
-        MediaPlayer mediaPlayer2 = MediaPlayer.create( this, R.raw.buenasnoches);
+        MediaPlayer mediaPlayer2 = MediaPlayer.create(this, R.raw.buenasnoches);
         imageButton.setOnClickListener(v -> mediaPlayer2.start());
         imageButton = findViewById(R.id.btnTaysan);
-        MediaPlayer mediaPlayer3 = MediaPlayer.create( this, R.raw.hola);
+        MediaPlayer mediaPlayer3 = MediaPlayer.create(this, R.raw.hola);
         imageButton.setOnClickListener(v -> mediaPlayer3.start());
         imageButton = findViewById(R.id.btnPeyna);
-        MediaPlayer mediaPlayer4 = MediaPlayer.create( this, R.raw.yeksaludo);
+        MediaPlayer mediaPlayer4 = MediaPlayer.create(this, R.raw.yeksaludo);
         imageButton.setOnClickListener(v -> mediaPlayer4.start());
         imageButton = findViewById(R.id.btnAzul);
-        MediaPlayer mediaPlayer5 = MediaPlayer.create( this, R.raw.azul);
+        MediaPlayer mediaPlayer5 = MediaPlayer.create(this, R.raw.azul);
         imageButton.setOnClickListener(v -> mediaPlayer5.start());
         imageButton = findViewById(R.id.btnRojo);
-        MediaPlayer mediaPlayer6 = MediaPlayer.create( this, R.raw.rojo);
+        MediaPlayer mediaPlayer6 = MediaPlayer.create(this, R.raw.rojo);
         imageButton.setOnClickListener(v -> mediaPlayer6.start());
         imageButton = findViewById(R.id.btnAmarillo);
-        MediaPlayer mediaPlayer7 = MediaPlayer.create( this, R.raw.amarillo);
+        MediaPlayer mediaPlayer7 = MediaPlayer.create(this, R.raw.amarillo);
         imageButton.setOnClickListener(v -> mediaPlayer7.start());
         imageButton = findViewById(R.id.btnVerde);
-        MediaPlayer mediaPlayer8 = MediaPlayer.create( this, R.raw.verde);
+        MediaPlayer mediaPlayer8 = MediaPlayer.create(this, R.raw.verde);
         imageButton.setOnClickListener(v -> mediaPlayer8.start());
         imageButton = findViewById(R.id.btnNaranja);
-        MediaPlayer mediaPlayer9 = MediaPlayer.create( this, R.raw.naranja);
+        MediaPlayer mediaPlayer9 = MediaPlayer.create(this, R.raw.naranja);
         imageButton.setOnClickListener(v -> mediaPlayer9.start());
         imageButton = findViewById(R.id.btnBlanco);
-        MediaPlayer mediaPlayer10 = MediaPlayer.create( this, R.raw.blanco);
+        MediaPlayer mediaPlayer10 = MediaPlayer.create(this, R.raw.blanco);
         imageButton.setOnClickListener(v -> mediaPlayer10.start());
         imageButton = findViewById(R.id.btnNegro);
-        MediaPlayer mediaPlayer11 = MediaPlayer.create( this, R.raw.negro);
+        MediaPlayer mediaPlayer11 = MediaPlayer.create(this, R.raw.negro);
         imageButton.setOnClickListener(v -> mediaPlayer11.start());
     }
 
@@ -118,6 +118,11 @@ public class Saludos extends AppCompatActivity implements NavigationView.OnNavig
             case R.id.nav_pronombres:
                 Intent intentP = new Intent(Saludos.this, Pronombres.class);
                 startActivity(intentP);
+                finish();
+                break;
+            case R.id.about_layout:
+                Intent intentA = new Intent(Saludos.this, AboutAct.class);
+                startActivity(intentA);
                 finish();
                 break;
         }
