@@ -50,42 +50,43 @@ public class Numeros extends AppCompatActivity implements NavigationView.OnNavig
         //---------Botones_Audio------------------//
 
         imageButton = findViewById(R.id.btnUno);
-        MediaPlayer mediaPlayer1 = MediaPlayer.create( this, R.raw.uno);
+        MediaPlayer mediaPlayer1 = MediaPlayer.create(this, R.raw.uno);
         imageButton.setOnClickListener(v -> mediaPlayer1.start());
         imageButton = findViewById(R.id.btnDos);
-        MediaPlayer mediaPlayer2 = MediaPlayer.create( this, R.raw.dos);
+        MediaPlayer mediaPlayer2 = MediaPlayer.create(this, R.raw.dos);
         imageButton.setOnClickListener(v -> mediaPlayer2.start());
         imageButton = findViewById(R.id.btnTres);
-        MediaPlayer mediaPlayer3 = MediaPlayer.create( this, R.raw.tres);
+        MediaPlayer mediaPlayer3 = MediaPlayer.create(this, R.raw.tres);
         imageButton.setOnClickListener(v -> mediaPlayer3.start());
         imageButton = findViewById(R.id.btnCuatro);
-        MediaPlayer mediaPlayer4 = MediaPlayer.create( this, R.raw.cuatro);
+        MediaPlayer mediaPlayer4 = MediaPlayer.create(this, R.raw.cuatro);
         imageButton.setOnClickListener(v -> mediaPlayer4.start());
         imageButton = findViewById(R.id.btnCinco);
-        MediaPlayer mediaPlayer5 = MediaPlayer.create( this, R.raw.cinco);
+        MediaPlayer mediaPlayer5 = MediaPlayer.create(this, R.raw.cinco);
         imageButton.setOnClickListener(v -> mediaPlayer5.start());
         imageButton = findViewById(R.id.btnSeis);
-        MediaPlayer mediaPlayer6 = MediaPlayer.create( this, R.raw.seis);
+        MediaPlayer mediaPlayer6 = MediaPlayer.create(this, R.raw.seis);
         imageButton.setOnClickListener(v -> mediaPlayer6.start());
         imageButton = findViewById(R.id.btnSiete);
-        MediaPlayer mediaPlayer7 = MediaPlayer.create( this, R.raw.siete);
+        MediaPlayer mediaPlayer7 = MediaPlayer.create(this, R.raw.siete);
         imageButton.setOnClickListener(v -> mediaPlayer7.start());
         imageButton = findViewById(R.id.btnOcho);
-        MediaPlayer mediaPlayer8 = MediaPlayer.create( this, R.raw.ocho);
+        MediaPlayer mediaPlayer8 = MediaPlayer.create(this, R.raw.ocho);
         imageButton.setOnClickListener(v -> mediaPlayer8.start());
         imageButton = findViewById(R.id.btnNueve);
-        MediaPlayer mediaPlayer9 = MediaPlayer.create( this, R.raw.nueve);
+        MediaPlayer mediaPlayer9 = MediaPlayer.create(this, R.raw.nueve);
         imageButton.setOnClickListener(v -> mediaPlayer9.start());
         imageButton = findViewById(R.id.btnDiez);
-        MediaPlayer mediaPlayer10 = MediaPlayer.create( this, R.raw.dies);
+        MediaPlayer mediaPlayer10 = MediaPlayer.create(this, R.raw.dies);
         imageButton.setOnClickListener(v -> mediaPlayer10.start());
         imageButton = findViewById(R.id.btnOnce);
-        MediaPlayer mediaPlayer11 = MediaPlayer.create( this, R.raw.once);
+        MediaPlayer mediaPlayer11 = MediaPlayer.create(this, R.raw.once);
         imageButton.setOnClickListener(v -> mediaPlayer11.start());
         imageButton = findViewById(R.id.btnDoce);
-        MediaPlayer mediaPlayer12 = MediaPlayer.create( this, R.raw.doce);
+        MediaPlayer mediaPlayer12 = MediaPlayer.create(this, R.raw.doce);
         imageButton.setOnClickListener(v -> mediaPlayer12.start());
     }
+
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
@@ -106,6 +107,11 @@ public class Numeros extends AppCompatActivity implements NavigationView.OnNavig
             case R.id.nav_pronombres:
                 Intent intentP = new Intent(Numeros.this, Pronombres.class);
                 startActivity(intentP);
+                finish();
+                break;
+            case R.id.about_layout:
+                Intent intentA = new Intent(Numeros.this, AboutAct.class);
+                startActivity(intentA);
                 finish();
                 break;
         }

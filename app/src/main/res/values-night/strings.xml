@@ -11,7 +11,7 @@
     <string name="strLogout">Cerrar sesion</string>
     <string name="strAbout">Acerca de</string>
     <string name="title_activity_login">Login</string>
-    <string name="TituloTabla">Abecedario Nahuatl</string>
+    <string name="TituloTabla">Abecedario Nahuat</string>
     <string name="CDbtnH">ayohtli</string>
     <string name="CDbtnY">yacatzotl</string>
     <string name="CDbtnX">xochitl</string>
@@ -37,8 +37,14 @@
     <string name="navclose">Cerrar menu</string>
     <string name="strInicioHeader">Inicio</string>
     <string name="strLogoAppHeader">LogoAprendeNahuat</string>
-    <string name="str_toolbartitle">Aprende Nahuatl</string>
+    <string name="str_toolbartitle">Aprende Nahuat</string>
     <string name="strLogoNavbar">Logo de aplicación</string>
     <string name="str_TabSaludosyColores">Saludos y Colores en Nahuat</string>
     <string name="strPronom">Pronombres en Nahuat</string>
+    <string name="strTitAbout">Acerca de nosotros</string>
+    <string name="strCola">Colaborador Nahuat - hablante</string>
+    <string name="strDevMiguel">Desarrollador</string>
+    <string name="strDevAlex">Desarrollador</string>
+    <string name="strDevStanley">Desarrollador</string>
+    <string name="strDevMarvin">Desarrollador</string>
 </resources>

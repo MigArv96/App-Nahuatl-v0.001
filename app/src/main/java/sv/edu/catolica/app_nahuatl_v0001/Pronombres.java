@@ -117,6 +117,11 @@ public class Pronombres extends AppCompatActivity implements NavigationView.OnNa
             case R.id.nav_pronombres:
                 finish();
                 break;
+            case R.id.about_layout:
+                Intent intentA = new Intent(Pronombres.this, AboutAct.class);
+                startActivity(intentA);
+                finish();
+                break;
         }
         drawerLayout.closeDrawer(GravityCompat.START);
         return true;
