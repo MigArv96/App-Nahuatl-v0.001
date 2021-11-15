@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         //---------Botones_Audio------------------//
 
-                imageButton = findViewById(R.id.btnA);
+        imageButton = findViewById(R.id.btnA);
         MediaPlayer mediaPlayer = MediaPlayer.create( this, R.raw.a);
         imageButton.setOnClickListener(v -> mediaPlayer.start());
         imageButton = findViewById(R.id.btnCH);
@@ -106,10 +106,14 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         imageButton = findViewById(R.id.btnY);
         MediaPlayer mediaPlayer17 = MediaPlayer.create( this, R.raw.y);
         imageButton.setOnClickListener(v -> mediaPlayer17.start());
+        imageButton = findViewById(R.id.btnU);
         MediaPlayer mediaPlayer18 = MediaPlayer.create( this, R.raw.u);
         imageButton.setOnClickListener(v -> mediaPlayer18.start());
+        imageButton = findViewById(R.id.btnH);
         MediaPlayer mediaPlayer19 = MediaPlayer.create( this, R.raw.h);
         imageButton.setOnClickListener(v -> mediaPlayer19.start());
+
+
 
     }
 
@@ -126,18 +130,23 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
             case R.id.nav_home:
+            case R.id.nav_abcdario:
+                finish();
                 break;
             case R.id.nav_numeros:
                 Intent intentN = new Intent(MainActivity.this, Numeros.class);
                 startActivity(intentN);
+                finish();
                 break;
             case R.id.nav_saludos:
                 Intent intentS = new Intent(MainActivity.this, Saludos.class);
                 startActivity(intentS);
+                finish();
                 break;
             case R.id.nav_pronombres:
                 Intent intentP = new Intent(MainActivity.this, Pronombres.class);
                 startActivity(intentP);
+                finish();
                 break;
         }
         drawerLayout.closeDrawer(GravityCompat.START);
