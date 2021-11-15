@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppNahuatlv0001">
         <activity
+            android:name=".AboutAct"
+            android:exported="true" />
+        <activity
             android:name=".Saludos"
             android:exported="true" />
         <activity
