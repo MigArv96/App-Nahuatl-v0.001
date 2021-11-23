@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "315207491044",
+    "project_id": "nahuat-001",
+    "storage_bucket": "nahuat-001.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:315207491044:android:8b8c2d19180465767fbbf1",
+        "android_client_info": {
+          "package_name": "sv.edu.catolica.app_nahuatl_v0001"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "315207491044-0vseiadm6oesbvotiusu7ojc99c15ek9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "sv.edu.catolica.app_nahuatl_v0001",
+            "certificate_hash": "5122bd28ada6e18ddef17c825dde82931404cced"
+          }
+        },
+        {
+          "client_id": "315207491044-lppfsae7skprgnjq6artqeanjupbo6tv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPjY3KUF4ZKbHJWrL4yVij1daLGpJV-7I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "315207491044-lppfsae7skprgnjq6artqeanjupbo6tv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

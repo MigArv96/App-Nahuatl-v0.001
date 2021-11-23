@@ -14,11 +14,18 @@ import android.view.View;
 import android.widget.ImageButton;
 
 
+import com.google.android.gms.auth.api.signin.GoogleSignIn;
+import com.google.android.gms.auth.api.signin.GoogleSignInClient;
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.auth.FirebaseAuth;
+
+import sv.edu.catolica.app_nahuatl_v0001.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+//view binding new parameter
 
-    //Declaracion de variables
+    //Declaration de variables
 
     DrawerLayout drawerLayout;
     NavigationView navigationView;
@@ -28,8 +35,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_main);
 
+
+        //init firebase
 
 
         /*---------- Anclajes por ID ----------*/
@@ -153,6 +163,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 startActivity(intentA);
                 finish();
                 break;
+            case R.id.nav_logout:
+                Intent intentSalir = new Intent(MainActivity.this, Salir.class);
+                startActivity(intentSalir);
+                finish();
+                break;
+
         }
         drawerLayout.closeDrawer(GravityCompat.START);
         return true;
